@@ -344,7 +344,7 @@ T A B - S I D E B A R
   z-index: 1000 !important;
   position: relative !important;
   min-width: var(--sidebar-collapsed-width) !important;
-    max-width: var(--sidebar-collapsed-width) !important;
+  max-width: var(--sidebar-collapsed-width) !important;
 }
 
 #sidebar-header,
@@ -582,7 +582,7 @@ W I N D O W - C O N T R OL S
 P O P - U P S
 */
 
-/*basically removes tons of items in popups I dont like (including ALL seperator lines I could find, might wanna add those ina gain if you need some of the options I removed)*/
+/*basically removes tons of items in popups I dont like (including ALL seperator lines I could find, might wanna add those in again if you need some of the options I removed)*/
 
 :root{
   --arrowpanel-border-color: var(--srf-color-selection) !important;
@@ -818,10 +818,6 @@ menuitem#treestyletab_piro_sakura_ne_jp-menuitem-_context_separator\:afterCollap
 menuitem#page-menu-separator{
   display: none
 }
-
-
-
-
 
 /*
 U R L B A R

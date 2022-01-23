@@ -9,3 +9,23 @@ To use this you will have to first set up a functioning ``chrome``-Folder. The F
 - toggle ``toolkit.legacyUserProfileCustomizations.stylesheets`` to true in the ``about:config`` page
 - create a ``chrome`` folder in your profile directory
 - the profile directory can be found by going to ``about:profiles`` and then opening the root directory of the profile used (probably the default one)
+
+
+### "Features"
+
+- Polar Night (aka nord dark) colors allround
+- rounded edges everywhere
+- really nice TreestyleTabs config (look below)
+- very clean pop up and mouseclick menus (because I removed tons of items in popups I dont like)
+
+especially because I removed so much I encourage you to use the [Browser Toolbox](https://developer.mozilla.org/en-US/docs/Tools/Browser_Toolbox) and change the code to your liking
+
+### TST (TreestyleTabs) config
+
+to set up my tst config simply follow the guide in the [FlyingFox wiki](https://github.com/akshat46/FlyingFox/wiki/%23-Installation#treestyletab-css) and use the ``tst/treestyletab.css``
+
+### Acknoledgements
+
+this is basically built ontop of [FlyingFox](https://github.com/akshat46/FlyingFox) by @akshat46
+
+![image](Screenshot.png)

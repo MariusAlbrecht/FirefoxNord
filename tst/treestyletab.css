@@ -1,0 +1,281 @@
+:root{ 
+  --dark-0: #2e3440;
+  --dark-base: #2e3440;
+  --dark-1: #3b4252;
+  --dark-2: #434c5e;
+  --dark-3: #4c566a;
+  --dark-4: #4c566a;
+  --light-0: #d8dee9;
+  --light-base: #e5e9f0;
+  --light-1: #eceff4;
+  --light-2: #8fbcbb;
+  --light-3: #88c0d0;
+  --light-4: #81a1c1;
+  --accent: #5e81ac;
+  --extension-icon-mask: grayscale(70%) invert(75%) sepia(12%) saturate(870%) hue-rotate(173deg);
+}
+
+:root.incognito{ 
+  --dark-0: #1C0E34;
+  --dark-base: #20103c;
+  --dark-1: #2F1D4E;
+  --dark-2: #38225D;
+  --dark-3: #4A2D7B;
+  --dark-4: #53338A;
+  --light-0: #CC6B9C;
+  --light-base: #B9407C;
+  --light-1: #AB3B73;
+  --light-2: #9C3569;
+  --light-3: #8D305E;
+  --light-4: #7D2B54;
+  --accent: #e9207e;
+  --yellow: #C9B336;
+  --green: #36C987;
+  --red: #C9365D;
+  --extension-icon-mask: grayscale(85%) invert(13%) sepia(80%) saturate(3107%) hue-rotate(256deg) brightness(84%) contrast(93%);
+}
+
+
+:root{
+    --tab-border-radius: 6px; /* border radius of tabs */
+    --animation-duration: 140ms; /* duration of different animations [0s: turn all animations off] */
+    --spacing: 3px; /* spacing between tabs. [<15px: compact tabs] */
+    --distance-from-edge: 5px; /* distance between tabs, and left-right edges of sidebar*/
+    --hover-text-spacing: 0.4; /* should be left alone. with hover sidebar, if text is visible in collapsed status, increase this */
+
+
+    --ease-in: cubic-bezier(0.32, 0, 0.67, 0);
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+    --collapsed-width: 40px;
+  
+    --contextual-identity-color-blue: #63B3ED;
+    --contextual-identity-color-orange: #F6AD55;
+    --contextual-identity-color-green: #68D391;
+    --contextual-identity-color-pink: #F687B3;
+}
+
+/************UNCUSTOMIZED CSS************/
+#tabbar-container #tabbar{
+   margin-bottom: 10px !important;
+}
+
+:root, #background{
+    background:  var(--dark-base) !important;
+}
+
+#all-tabs{
+   margin: 12px var(--distance-from-edge);
+}
+
+tab-item:not(.collapsed) {
+    margin-top: var(--spacing);
+    border-radius: var(--tab-border-radius);
+    border: none !important;
+    padding-top: 9px;
+    padding-bottom: 10px;
+}
+
+tab-item.collapsed{
+    height: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+tab-item:not([data-level="0"]):not(.pinned){
+    border-left: dashed 2px var(--light-4) !important;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-top: calc(var(--spacing)/2);
+}
+
+tab-item tab-favicon{
+    filter: var(--extension-icon-mask);
+  	transform: scale(1.1)
+}
+
+.highlighter {
+    display: none !important;
+}
+
+tab-item .label {
+    color: var(--light-2) !important;
+    padding-bottom: 2px;
+}
+
+tab-item .twisty:before{
+   background: var(--light-3) !important;
+}
+
+tab-item.active .label {
+    color: var(--light-0) !important;
+}
+
+tab-item.active {
+    background: var(--dark-3) !important;
+}
+
+
+tab-item:not(.active).highlighted{
+    background: var(--dark-1) !important;
+}
+
+tab-item:not(active):hover {
+    background: var(--dark-1);
+}
+
+tab-item:hover tab-closebox {
+     display: none
+}
+
+tab-item:not(pinned) tab-closebox {
+    display: none
+}
+
+.sound-button:after {
+    background: var(--light-3) !important;
+    margin-right: 5px;
+}
+
+.counter{
+    color: var(--light-4) !important;
+    background: var(--dark-2) !important;
+    border-radius: 7px;
+    margin: 2px 4px 0px 0px;
+    padding: 0 4px;
+    padding-bottom: 2px;
+    order: -1 !important;
+}
+
+.counter:before, .counter:after{ content: ""}
+
+/********LEFT CONTENT TAB(hover)*************/
+
+:root.left tab-item{
+    padding-left: 0px;
+}
+
+:root.left tab-item tab-favicon {
+    order: 10 !important;
+    margin-right: calc(var(--collapsed-width)*0.25) !important;
+    transform: scale(100%) translateX(0px) !important;
+}
+
+:root.left tab-item .sound-button:after {
+  display: none;
+}
+
+:root.left tab-item .label{
+    transform: translateX(0px);
+    margin-right: calc(var(--collapsed-width)*var(--hover-text-spacing)) !important;
+}
+
+:root.left tab-item:not(.pinned):hover tab-favicon {
+}
+
+:root.left tab-item:not([data-child-ids]):hover .label {
+}
+
+:root.left tab-item[data-child-ids] .twisty{
+    margin-left: 5px;
+}
+
+/***********************************/
+
+.tab
+    .favicon
+    .favicon-default::before {
+    filter: var(--extension-icon-mask); /* change for light theme */
+}
+
+.tab[data-current-favicon-uri="undefined"]
+    .favicon
+    .favicon-default::before{
+    background: url("chrome://branding/content/identity-icons-brand.svg") no-repeat center !important;
+    mask: none !important;
+}
+
+/***********NEW TAB BUTTON**********/
+
+.newtab-button-box {
+    display: none;
+}
+
+/*
+.newtab-button-box {
+    border: none !important;
+    margin: 0 66.5px;
+}
+
+.newtab-button {
+    border: none !important;
+    border-radius: 6px;
+    padding: 8px 0 !important;
+    margin: 0 5px;
+}
+
+.newtab-button::before{
+   background: var(--light-3) !important;
+}
+
+.newtab-action-selector-anchor {
+    border: none !important;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.newtab-button:hover {
+    background: var(--dark-1);
+}
+*/
+/**********PINNED TAB***************/
+
+tab-item.pinned {
+    margin: 5px !important;
+    padding: 5px !important;
+    transition   : all 0.1s var(--ease-out);
+}
+
+/**********CONTAINERS***************/
+
+.contextual-identity-marker{
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+}
+
+tab-item.active .contextual-identity-marker {
+    display: none !important;
+}
+
+.contextual-identity-firefox-container-1:not(.active),
+.contextual-identity-firefox-container-2:not(.active),
+.contextual-identity-firefox-container-3:not(.active),
+.contextual-identity-firefox-container-4:not(.active){
+   border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+tab-item.active.contextual-identity-firefox-container-1 {
+    background: linear-gradient(to right, #3182CE , #0BC5EA) !important;
+}
+
+tab-item.active.contextual-identity-firefox-container-2 {
+    background: linear-gradient(to right, #DD6B20 , #F56565) !important;
+}
+
+tab-item.active.contextual-identity-firefox-container-3 {
+   background: linear-gradient(to right, #38A169 , #38B2AC) !important;
+}
+
+tab-item.active.contextual-identity-firefox-container-4 {
+   background: linear-gradient(to right, #D53F8C , #9F7AEA) !important;
+}
+
+/***********************************/
+
+#all-tabs {
+    border: none !important;
+}
