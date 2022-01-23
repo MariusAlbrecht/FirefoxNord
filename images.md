@@ -1,5 +1,5 @@
-!(image)[tst/Screenshot]
-!(image)[tst/Screenshot2]
-!(image)[tst/Screenshot3]
-!(image)[tst/Screenshot4]
-!(image)[tst/Screenshot5]
+![image](tst/Screenshot)
+![image](tst/Screenshot2)
+![image](tst/Screenshot3)
+![image](tst/Screenshot4)
+![image](tst/Screenshot5)

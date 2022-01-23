@@ -2,7 +2,7 @@
 
 A Nord theme of the amazig Firefox browser using the ability of Firefox to have custom css injected to alter the layout.
 
-take a look at the pictures (here)[/images.md]
+take a look at the pictures [here](images.md)
 
 ### Usage
 
