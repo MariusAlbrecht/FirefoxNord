@@ -22,11 +22,9 @@ and set up the tst (TreestyleTabs) config. For that follow the guide in the [Fly
 - really nice TreestyleTabs config (look below)
 - very clean pop up and mouseclick menus (because I removed tons of items in popups I dont like)
 
-especially because I removed so much I encourage you to use the [Browser Toolbox](https://developer.mozilla.org/en-US/docs/Tools/Browser_Toolbox) and change the code to your liking
+Especially because I removed so much I encourage you to use the [Browser Toolbox](https://developer.mozilla.org/en-US/docs/Tools/Browser_Toolbox) and change the code to your liking
 
 
 ### Acknoledgements
 
 this is basically built ontop of [FlyingFox](https://github.com/akshat46/FlyingFox) by @akshat46
-
-![image](Screenshot.png)
