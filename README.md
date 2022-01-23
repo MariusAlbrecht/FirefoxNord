@@ -2,6 +2,8 @@
 
 A Nord theme of the amazig Firefox browser using the ability of Firefox to have custom css injected to alter the layout.
 
+take a look at the pictures (gere)[images.md]
+
 ### Usage
 
 To use this you will have to first set up a functioning ``chrome``-Folder. The FirefoxCss reddit community has a good [guide](https://www.reddit.com/r/FirefoxCSS/wiki/index/tutorials/#wiki_setup) on how to do this. You basically have to
