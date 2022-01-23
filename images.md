@@ -1,9 +1,9 @@
-![image](images/Screenshot)
+![image](/images/Screenshot)
 
-![image](images/Screenshot2)
+![image](/images/Screenshot2)
 
-![image](images/Screenshot3)
+![image](/images/Screenshot3)
 
-![image](images/Screenshot4)
+![image](/images/Screenshot4)
 
-![image](images/Screenshot5)
+![image](/images/Screenshot5)
